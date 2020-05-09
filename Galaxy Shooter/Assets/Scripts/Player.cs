@@ -6,14 +6,18 @@ public class Player : MonoBehaviour
     [SerializeField] // Allows value to be modified in the designer
     private float _speed = 1;
 
-    // Start is called before the first frame update
-    void Start()
+    /// <summary>
+    /// Start is called before the first frame update
+    /// </summary>
+    public void Start()
     {
         transform.position = new Vector3(0, 0, 0);
     }
 
-    // Update is called once per frame
-    void Update()
+    /// <summary>
+    /// Update is called once per frame
+    /// </summary>
+    public void Update()
     {
         var horizontalInput = Input.GetAxis(Constants.HorizontalInputKey);
         var verticalInput = Input.GetAxis(Constants.VerticalInputKey);
